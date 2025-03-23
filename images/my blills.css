@@ -1,0 +1,280 @@
+.body{
+    background-color: white
+}
+a{
+    text-decoration: none;
+}
+.container {
+    display: flex;
+}
+/* Sidebar Styles */
+.sidebar {
+    max-width: 200px;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid #7cb7ff;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 150px;
+    height: 90px;
+    color: #003366;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #070d10;
+    gap: 10px;
+    font-size: larger;
+}
+.menu-item .bleu_borde{
+    border: 1px solid;
+    width: 120px;
+    height: 40px;
+    color: #199aea;
+    border-radius: 10px;
+    border-color: #c0dcff;
+    background-color: #aed2fe;
+    font-size: medium;
+    padding-left: 10px;
+
+} 
+.menu-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-item.active {
+    color: #376cd7;
+    margin-left: 8px;
+}
+
+.menu-item i {
+    font-size: 25px;
+}
+
+.menu-item span {
+    font-size: 20px;
+}
+
+.sidebar-footer {
+    margin-top:290px;
+    padding: 20px 10px;
+    color: #1f1d1d;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sidebar-footer img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* Header */
+.main{
+
+    margin-top: 0;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;    
+}
+.header {
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    margin-top: 0px;
+    background-color: #c4e0ff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+  
+    
+}
+
+.search-bar input {
+    color: #2990d0;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    
+}
+.icons-rigth{
+    display: flex;
+    padding-left: 550px;
+    gap:40px;
+    justify-content: space-between;
+
+}
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+   
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff3366;
+    color: white;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #0066cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+} 
+.table  .main-content h1{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+
+}
+h2 {
+    color: #333;
+
+}
+
+/* تصميم الجدول */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* رؤوس الجدول */
+th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: #555;
+}
+
+/* خلايا الجدول */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* تحديد الصف عند النقر */
+tr.selected {
+    background-color: #d0e7ff;
+    transition: 0.3s ease;
+}
+
+/* تأثير عند تمرير الماوس */
+tr:hover {
+    background-color: #bdd3fe7d;
+    cursor: pointer;
+}
+
+/* تصميم حالات الدفع */
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* الحالة المدفوعة باللون الأخضر */
+.status.paid {
+    color: #2b8145;
+    border: 1px solid #4CAF50;
+}
+
+/* الحالة المعلقة باللون الأحمر */
+.status.pending {
+    color: #932f2f;
+    border: 1px solid #d9534f;
+}
+
+/* تصميم مربعات الاختيار */
+input[type="checkbox"]:checked {
+    cursor: pointer;
+    accent-color: #2953d0;
+}
+tr{
+  text-align: left;
+}
+.change span{
+  width: 17px;
+  height: 17px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 1px;
+  
+}
+.change input[type="checkbox"] {
+  appearance: none; 
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+
+}
+
+.change input[type="checkbox"]:checked {
+  background-color: #2953d0; 
+  border-color: #7b7b7b;
+  
+}
+
