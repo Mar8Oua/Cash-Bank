@@ -24,9 +24,9 @@ header{
   align-items: center;
   margin: 3%;
 }
-.logo{
-    font-weight: bold;
-    font-size: 20px;
+.logo img{
+    width: 101px;
+    height: 53px;
 } 
 /*nav bar*/
 .list1{
