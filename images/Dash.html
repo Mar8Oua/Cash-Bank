@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">LOGO</div>
+            <div class="sidebar-menu">
+                <div class="menu-item active">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="menu-item">
+                    <i class="far fa-credit-card"></i>
+                    <span>my card</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transactions</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Payement</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <i class="far fa-question-circle"></i>
+                <span>Get Help</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header with Search and User Profile -->
+            <div class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search or type">
+                </div>
+                <div class="header">
+                    <div class="icon-container">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7109 18.6251C16.7109 18.0958 17.14 17.6667 17.6693 17.6667H25.3359C25.8652 17.6667 26.2943 18.0958 26.2943 18.6251C26.2943 19.1544 25.8652 19.5834 25.3359 19.5834H17.6693C17.14 19.5834 16.7109 19.1544 16.7109 18.6251Z" fill="#172B85"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7109 22.4583C16.7109 21.9291 17.14 21.5 17.6693 21.5H21.5026C22.0319 21.5 22.4609 21.9291 22.4609 22.4583C22.4609 22.9876 22.0319 23.4167 21.5026 23.4167H17.6693C17.14 23.4167 16.7109 22.9876 16.7109 22.4583Z" fill="#172B85"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.437 26.7359C16.7815 26.4489 17.2157 26.2917 17.6641 26.2917H28.2057C28.735 26.2917 29.1641 25.8626 29.1641 25.3333V15.75C29.1641 15.2207 28.735 14.7917 28.2057 14.7917H14.7891C14.2598 14.7917 13.8307 15.2207 13.8307 15.75V28.9078L16.437 26.7359ZM17.6641 28.2083H28.2057C29.7935 28.2083 31.0807 26.9212 31.0807 25.3333V15.75C31.0807 14.1622 29.7935 12.875 28.2057 12.875H14.7891C13.2012 12.875 11.9141 14.1622 11.9141 15.75V28.9078C11.9141 30.5329 13.8094 31.4206 15.0577 30.3803L17.6641 28.2083Z" fill="#172B85"/>
+                            <rect x="21.4619" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" fill="#EB001B"/>
+                            <rect x="21.4619" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" stroke="#FCFCFC" stroke-width="1.7168"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9141 25.9045C12.9141 25.5395 13.0623 25.1902 13.3248 24.9367L14.3109 23.9842C14.6863 23.6217 14.8976 23.1217 14.896 22.5999L14.887 19.5782C14.8743 15.3506 18.2979 11.9167 22.5255 11.9167C26.7442 11.9167 30.1641 15.3366 30.1641 19.5553L30.1641 22.6228C30.1641 23.1312 30.366 23.6187 30.7254 23.9781L31.6838 24.9365C31.9379 25.1906 32.0807 25.5353 32.0807 25.8948C32.0807 26.6433 31.4739 27.2501 30.7254 27.2501H26.3307C26.3307 29.3672 24.6145 31.0834 22.4974 31.0834C20.3803 31.0834 18.6641 29.3672 18.6641 27.2501H14.2596C13.5165 27.2501 12.9141 26.6476 12.9141 25.9045ZM20.5807 27.2501C20.5807 28.3086 21.4388 29.1667 22.4974 29.1667C23.5559 29.1667 24.4141 28.3086 24.4141 27.2501H20.5807ZM28.2474 22.6228C28.2474 23.6395 28.6513 24.6145 29.3701 25.3334L15.6726 25.3334C16.4045 24.6108 16.8158 23.6238 16.8127 22.5941L16.8036 19.5725C16.7941 16.4057 19.3587 13.8334 22.5255 13.8334C25.6856 13.8334 28.2474 16.3952 28.2474 19.5553L28.2474 22.6228Z" fill="#172B85"/>
+                            <rect x="21.665" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" fill="#EB001B"/>
+                            <rect x="21.665" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" stroke="#FCFCFC" stroke-width="1.7168"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9062 0.101562C8.24625 0.101562 0.40625 7.94156 0.40625 17.6016C0.40625 27.2616 8.24625 35.1016 17.9062 35.1016C27.5662 35.1016 35.4062 27.2616 35.4062 17.6016C35.4062 7.94156 27.5662 0.101562 17.9062 0.101562ZM17.9062 7.10156C21.2837 7.10156 24.0312 9.84906 24.0312 13.2266C24.0312 16.6041 21.2837 19.3516 17.9062 19.3516C14.5288 19.3516 11.7812 16.6041 11.7812 13.2266C11.7812 9.84906 14.5288 7.10156 17.9062 7.10156ZM17.9062 31.6016C14.3537 31.6016 10.1538 30.1666 7.16125 26.5616C10.2269 24.1574 14.0103 22.8509 17.9062 22.8509C21.8022 22.8509 25.5856 24.1574 28.6512 26.5616C25.6587 30.1666 21.4588 31.6016 17.9062 31.6016Z" fill="#172B85"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Left Side Content -->
+                <div class="dashboard-left">
+                    <!-- Card Section -->
+                    <div class="card-section">
+                        <h2 class="section-title">My card</h2>
+                        <div class="card-container">
+                            <div class="card-details">
+                                <div class="card-label">Name</div>
+                                <div class="card-holder">Carla Rosser</div>
+                            </div>
+                            <div class="card-number">1200 0142 5425</div>
+                            <div class="card-expire">06/24</div>
+                            <div class="card-brand">VISA</div>
+                        </div>
+                    </div>
+
+                    <!-- Account Balance -->
+                    <div class="account-balance">
+                        <div class="account-header">
+                            <div class="account-title">Account Balance</div>
+                            <a href="#" class="view-report">View report</a>
+                        </div>
+                        <div class="account-date">From 01-31 March 2025</div>
+
+                        <div class="account-categories">
+                            <div class="account-category">
+                                <div class="category-name">Investments</div>
+                                <div class="category-amount">$86.47</div>
+                            </div>
+                            <div class="account-category">
+                                <div class="category-name">Savings</div>
+                                <div class="category-amount">$86.47</div>
+                            </div>
+                            <div class="account-category">
+                                <div class="category-name">Cash</div>
+                                <div class="category-amount">$86.47</div>
+                            </div>
+                        </div>
+
+                        <div class="gauge-container">
+                            <svg width="280" height="143" viewBox="0 0 280 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_69_6202" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="280" height="143">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M140 0.29248C62.6801 0.29248 0 62.9726 0 140.292V142.292H280V140.292C280 62.9726 217.32 0.29248 140 0.29248Z" fill="#C4C4C4"/>
+                                </mask>
+                                <g mask="url(#mask0_69_6202)">
+                                    <path d="M280 142.292C280 123.645 276.379 105.18 269.343 87.9514C262.307 70.7232 251.995 55.0692 238.995 41.8833C225.995 28.6974 210.561 18.2377 193.576 11.1016C176.59 3.96541 158.385 0.292477 140 0.29248V51.4125C151.766 51.4125 163.418 53.7632 174.288 58.3303C185.159 62.8975 195.037 69.5916 203.357 78.0306C211.677 86.4696 218.277 96.4881 222.78 107.514C227.282 118.54 229.6 130.358 229.6 142.292H280Z" fill="#EBF3FF"/>
+                                    <path d="M139.995 13.6572C156.65 13.6572 173.142 16.9845 188.529 23.449C203.916 29.9135 217.897 39.3887 229.673 51.3336C241.45 63.2785 250.792 77.4592 257.165 93.0659C263.539 108.673 266.819 125.4 266.819 142.293H221.162C221.162 131.481 219.063 120.776 214.984 110.788C210.905 100.799 204.926 91.7236 197.389 84.0788C189.852 76.4341 180.904 70.37 171.057 66.2327C161.209 62.0954 150.654 59.9659 139.995 59.9659V13.6572Z" fill="#4C6EF5"/>
+                                    <path d="M13.1719 142.293C13.1719 112.359 23.4643 83.3618 42.2762 60.2973C61.088 37.2329 87.2414 21.5448 116.231 15.9357L124.786 61.4242C106.233 65.014 89.4947 75.0543 77.4551 89.8156C65.4155 104.577 58.8283 123.135 58.8283 142.293L13.1719 142.293Z" fill="#CCE0FF"/>
+                                    <path d="M71.8115 33.8295C92.3574 20.542 116.242 13.5392 140.609 13.6587L140.388 59.9669C124.793 59.8904 109.507 64.3722 96.3577 72.8762L71.8115 33.8295Z" fill="#2A2E35"/>
+                                </g>
+                                <circle cx="240" cy="48.2925" r="31.5" fill="white" stroke="#F4F4F5"/>
+                                <text x="240" y="48.2925" text-anchor="middle" dominant-baseline="middle">
+                                    <tspan font-family="Arial" font-size="20" font-weight="bold" fill="#0A112F" dy="-2">50</tspan>
+                                    <tspan font-family="Arial" font-size="18" fill="#9096A2" dy="-2">%</tspan>
+                                </text>
+                            </svg>
+                            <div class="percentage-container">
+                                <!-- The text is now placed directly in the SVG -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Send Money -->
+                    <div class="send-money">
+                        <h2 class="section-title">Send money</h2>
+                        <div class="send-form">
+                            <div class="send-method">
+                                <div class="method-option active">
+                                    <i class="far fa-credit-card"></i>
+                                    <span>Debit</span>
+                                </div>
+                                <div class="method-option">10,480</div>
+                            </div>
+                            <div class="amount-input">
+                                <input type="text" value="800.00">
+                                <div class="currency">🇫🇷</div>
+                            </div>
+                            <div class="recipient-input">
+                                <i class="fas fa-user-circle"></i>
+                                <input type="text" placeholder="ITCashe user">
+                                <div class="add-btn">+</div>
+                            </div>
+                            <button class="send-btn">Send</button>
+                        </div>
+                    </div>
+
+                    <!-- Income Cards -->
+                    <div class="income-cards">
+                        <div class="income-card">
+                            <div class="income-label">Income</div>
+                            <div class="income-amount">$297,000</div>
+                            <div class="income-change">+$20,318 than last month</div>
+                        </div>
+                        <div class="income-card dark">
+                            <div class="income-label">Outcome</div>
+                            <div class="income-amount">$297,000</div>
+                            <div class="income-change">-$20,318 than last month</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Content -->
+                <div class="dashboard-right">
+                    <!-- Payment History -->
+                    <div class="payment-history">
+                        <div class="history-header">
+                            <div class="history-title">Payment History</div>
+                            <div class="history-tabs">
+                                <div class="history-tab active">1M</div>
+                                <div class="history-tab">3M</div>
+                                <div class="history-tab">6M</div>
+                                <div class="history-tab">1Y</div>
+                            </div>
+                        </div>
+
+                        <div class="total-amount">
+                            $12,135<span class="amount-cents">.69</span>
+                        </div>
+                        <div>
+                            <span class="amount-change">+23%</span>
+                            <span class="vs-period">vs last month</span>
+                        </div>
+
+                        <div class="chart-container">
+                            <canvas id="paymentChart" width="100%" height="100%"></canvas>
+                        </div>
+
+                        <!-- Recent Transactions -->
+                        <div class="recent-transactions">
+                            <div class="transactions-header">
+                                <div class="transactions-title">Recent Transactions</div>
+                                <div class="view-all">
+                                    <span>View all</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="transaction-list">
+                                <div class="transaction-item">
+                                    <div class="transaction-icon">₿</div>
+                                    <div class="transaction-details">
+                                        <div class="transaction-user">ITCashe user 1</div>
+                                        <div class="transaction-date">07 Dec 2025</div>
+                                    </div>
+                                    <div class="transaction-card">****364020</div>
+                                    <div class="transaction-amount">+$297.31</div>
+                                    <div class="transaction-status status-success">Success</div>
+                                </div>
+
+                                <div class="transaction-item">
+                                    <div class="transaction-icon" style="background-color: #8e44ad;">₿</div>
+                                    <div class="transaction-details">
+                                        <div class="transaction-user">ITCashe user 2</div>
+                                        <div class="transaction-date">03 Mar 2025</div>
+                                    </div>
+                                    <div class="transaction-card">****287501</div>
+                                    <div class="transaction-amount">+$16,000</div>
+                                    <div class="transaction-status status-pending">Pending</div>
+                                </div>
+
+                                <div class="transaction-item">
+                                    <div class="transaction-icon" style="background-color: #2980b9;">₿</div>
+                                    <div class="transaction-details">
+                                        <div class="transaction-user">ITCashe user 3</div>
+                                        <div class="transaction-date">28 Fev 2025</div>
+                                    </div>
+                                    <div class="transaction-card">****037195</div>
+                                    <div class="transaction-amount">+$197,939</div>
+                                    <div class="transaction-status status-success">Success</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- Chart.js for Payment History Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chart configuration for Payment History
+            const ctx = document.getElementById('paymentChart').getContext('2d');
+            const paymentChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Feb 1', 'Feb 8', 'Feb 15', 'Feb 22', 'Feb 28'],
+                    datasets: [{
+                        label: 'Payment History',
+                        data: [5000, 7000, 9500, 8000, 9000],
+                        fill: false,
+                        borderColor: '#4CAF50',
+                        tension: 0.4,
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#4CAF50',
+                        pointRadius: 4,
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    },
+                    scales: {
+                        y: {
+                            display: false,
+                            beginAtZero: true
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    elements: {
+                        line: {
+                            borderWidth: 2
+                        }
+                    }
+                }
+            });
+
+            // Interactivity for sidebar menu
+            const menuItems = document.querySelectorAll('.menu-item');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Interactivity for send method options
+            const methodOptions = document.querySelectorAll('.method-option');
+            methodOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    methodOptions.forEach(o => o.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Interactivity for history tabs
+            const historyTabs = document.querySelectorAll('.history-tab');
+            historyTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    historyTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

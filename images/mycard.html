@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Card</title>
+    <link rel="stylesheet" href="my card.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">LOGO</div>
+            <div class="sidebar-menu">
+                <div class="menu-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="menu-item  active">
+                    <i class="far fa-credit-card"></i>
+                    <span>my card</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transactions</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Payement</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <i class="far fa-question-circle"></i>
+                <span>Get Help</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header with Search and User Profile -->
+            <div class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search or type">
+                </div>
+                <div class="header">
+                    <div class="icon-container">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7109 18.6251C16.7109 18.0958 17.14 17.6667 17.6693 17.6667H25.3359C25.8652 17.6667 26.2943 18.0958 26.2943 18.6251C26.2943 19.1544 25.8652 19.5834 25.3359 19.5834H17.6693C17.14 19.5834 16.7109 19.1544 16.7109 18.6251Z" fill="#172B85"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7109 22.4583C16.7109 21.9291 17.14 21.5 17.6693 21.5H21.5026C22.0319 21.5 22.4609 21.9291 22.4609 22.4583C22.4609 22.9876 22.0319 23.4167 21.5026 23.4167H17.6693C17.14 23.4167 16.7109 22.9876 16.7109 22.4583Z" fill="#172B85"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.437 26.7359C16.7815 26.4489 17.2157 26.2917 17.6641 26.2917H28.2057C28.735 26.2917 29.1641 25.8626 29.1641 25.3333V15.75C29.1641 15.2207 28.735 14.7917 28.2057 14.7917H14.7891C14.2598 14.7917 13.8307 15.2207 13.8307 15.75V28.9078L16.437 26.7359ZM17.6641 28.2083H28.2057C29.7935 28.2083 31.0807 26.9212 31.0807 25.3333V15.75C31.0807 14.1622 29.7935 12.875 28.2057 12.875H14.7891C13.2012 12.875 11.9141 14.1622 11.9141 15.75V28.9078C11.9141 30.5329 13.8094 31.4206 15.0577 30.3803L17.6641 28.2083Z" fill="#172B85"/>
+                            <rect x="21.4619" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" fill="#EB001B"/>
+                            <rect x="21.4619" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" stroke="#FCFCFC" stroke-width="1.7168"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9141 25.9045C12.9141 25.5395 13.0623 25.1902 13.3248 24.9367L14.3109 23.9842C14.6863 23.6217 14.8976 23.1217 14.896 22.5999L14.887 19.5782C14.8743 15.3506 18.2979 11.9167 22.5255 11.9167C26.7442 11.9167 30.1641 15.3366 30.1641 19.5553L30.1641 22.6228C30.1641 23.1312 30.366 23.6187 30.7254 23.9781L31.6838 24.9365C31.9379 25.1906 32.0807 25.5353 32.0807 25.8948C32.0807 26.6433 31.4739 27.2501 30.7254 27.2501H26.3307C26.3307 29.3672 24.6145 31.0834 22.4974 31.0834C20.3803 31.0834 18.6641 29.3672 18.6641 27.2501H14.2596C13.5165 27.2501 12.9141 26.6476 12.9141 25.9045ZM20.5807 27.2501C20.5807 28.3086 21.4388 29.1667 22.4974 29.1667C23.5559 29.1667 24.4141 28.3086 24.4141 27.2501H20.5807ZM28.2474 22.6228C28.2474 23.6395 28.6513 24.6145 29.3701 25.3334L15.6726 25.3334C16.4045 24.6108 16.8158 23.6238 16.8127 22.5941L16.8036 19.5725C16.7941 16.4057 19.3587 13.8334 22.5255 13.8334C25.6856 13.8334 28.2474 16.3952 28.2474 19.5553L28.2474 22.6228Z" fill="#172B85"/>
+                            <rect x="21.665" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" fill="#EB001B"/>
+                            <rect x="21.665" y="9.44238" width="10.3008" height="10.3008" rx="5.15039" stroke="#FCFCFC" stroke-width="1.7168"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9062 0.101562C8.24625 0.101562 0.40625 7.94156 0.40625 17.6016C0.40625 27.2616 8.24625 35.1016 17.9062 35.1016C27.5662 35.1016 35.4062 27.2616 35.4062 17.6016C35.4062 7.94156 27.5662 0.101562 17.9062 0.101562ZM17.9062 7.10156C21.2837 7.10156 24.0312 9.84906 24.0312 13.2266C24.0312 16.6041 21.2837 19.3516 17.9062 19.3516C14.5288 19.3516 11.7812 16.6041 11.7812 13.2266C11.7812 9.84906 14.5288 7.10156 17.9062 7.10156ZM17.9062 31.6016C14.3537 31.6016 10.1538 30.1666 7.16125 26.5616C10.2269 24.1574 14.0103 22.8509 17.9062 22.8509C21.8022 22.8509 25.5856 24.1574 28.6512 26.5616C25.6587 30.1666 21.4588 31.6016 17.9062 31.6016Z" fill="#172B85"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+     <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Interactivity for sidebar menu
+            const menuItems = document.querySelectorAll('.menu-item');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+        });
+    </script>       
+    
+</body>
+</html>
