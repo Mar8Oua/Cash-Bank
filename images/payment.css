@@ -151,114 +151,58 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
- /*my cards*/
- .my-cards{
-    max-width: 1600px;
+.main{
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
- }
- .my-cards img{
-    width: 325px;
-    height: 194px;
- } 
-.my-cards .place{
-    width: 325px;
-    height: 194px;
-    background-color: rgba(204, 224, 255, 1);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
- }
- .place p{
-    padding-top: 30px;
-    padding-bottom: 5px;
- }
- /*credit car*/
- .credit-card{
-    max-width: 1600px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
     padding: 50px;
- }
- .credit-card h3{
-    font-size: 35px;
-    font-weight: 500;
- }
- .credit{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-
- }
- .first{
-    height: 33px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-self: start;
-    background-color: rgba(76, 110, 245, 1);
-    padding: 20px;
-    border-radius: 20px;
- }
- .crid{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-self: start;
-    height: 33px;
-    padding: 20px;
-    border-radius: 20px;
-    border: 3px solid;
-    border-color: rgba(76, 110, 245, 1);
- }
- 
- /*card information*/
- .card-info{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
- }
- .info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    gap: 300px;
+}
+.main img{
+    border-left: 3px solid; 
+    border-color:rgba(76, 110, 245, 0.36) ;
     padding: 30px;
-    
  }
- .info img{
-    width: 325px;
-    height: 194px; 
+ .main p{
+    font-size: 20px;
+    font-weight: 600;
  }
- .inf{
-    width: 500px;
-    height: 194px; 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin-left: 80px;
+.transfar{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.transfar h2{
+    font-size: 35px;
+    padding: 100px;
+}
+.but{
+    width: 655px;
+    height: 47px;
+    padding: 20px;
+    margin: 20px;
+    background-color:rgba(76, 110, 245, 0.18) ;
+    border: none;
     border-radius: 10px;
-    background-color: rgba(204, 224, 255, 1);
- }
- .in{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
- }
- .in p:first-child{
-    padding-right: 20px;
-    color: rgba(42, 46, 53, 0.58);
- }
+    font-size: 15px;
+}
+.Transaction{
+  width: 439px;  
+  height: 54px;
+  background-color: rgba(76, 110, 245, 1);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  margin: 40px;
+  transition: transform 0,3 ease;
+}
+.Transaction:hover{
+    transform: scale(1.1);
+}

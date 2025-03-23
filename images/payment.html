@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Card</title>
-    <link rel="stylesheet" href="my card.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
     <div class="container">
@@ -17,13 +16,13 @@
                     <i class="fas fa-th-large"></i>
                     <a href="Dash.html"><span>Dashboard</span></a>
                 </div>
-                <div class="menu-item  active">
+                <div class="menu-item">
                     <i class="far fa-credit-card"></i>
                     <a href="mycard.html"><span>my card</span></a>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item active ">
                     <i class="fas fa-exchange-alt"></i>
-                    <a href="payment.html"><span>Payement</span></a>
+                    <a href=""><span>Payement</span></a>
                 </div>
                 <div class="menu-item">
                     <i class="fas fa-wallet"></i>
@@ -78,59 +77,53 @@
                     </div>
                 </div>
             </div>
-            <div class="my-cards">
-                <div><img src="./Card 2.png" alt=""></div>
-                <div><img src="./Card 1.png" alt=""></div>
-                <div class="place"><span class="material-symbols-outlined">add</span><p>Add new card</p></div>
-            </div>
-            <div class="credit-card">
-                <h3>Find a credit card that fits your lifestyle.</h3>
-                <div class="credit">
-                    <div class="first"><span class="material-symbols-outlined">check</span><p>All credit cards</p></div>
-                    <div class="crid"><p>visa</p></div>
-                    <div class="crid"><p>Discover</p></div>
-                    <div class="crid"><p>Mastercard</p></div>
-                    <div class="crid"><p>Ebay</p></div>
-                    <div class="crid"><p>Skrill</p></div>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="info">
-                    <img src="./my card.png" alt="">
-                    <div class="inf">
-                        <div class="in"> <p>Card Name :</p> <p>Visa</p> </div>
-                        <div class="in"> <p>Card Number :</p> <p>1200 04152 54215</p> </div>
-                        <div class="in"> <p>Type :</p> <p>Business</p> </div>
-                        <div class="in"> <p>Annual Fee :</p> <p>$0</p> </div>
-                    </div>
-                </div>
-                <div class="info">
-                    <img src="./Card 3.png" alt="">
-                    <div class="inf">
-                        <div class="in"> <p>Card Name :</p> <p>Mastercard</p> </div>
-                        <div class="in"> <p>Card Number :</p> <p>5282 3456 7890 1289</p> </div>
-                        <div class="in"> <p>Type :</p> <p>Standard debit card</p> </div>
-                        <div class="in"> <p>Annual Fee :</p> <p>$0</p> </div>
-                    </div>
-                </div>
-            </div>
+            <div class="main">
+                <div class="transfar">
+                    <h2>Transfar money</h2>
+                    <div>
+                        <div class="trans">
+                            <p>Send amount</p>
+                           <input class="but" type="text" placeholder="$100.000 ">
+                        </div>
 
+                        <div class="trans">
+                            <p>Receiver country</p>
+                            <input class="but" type="text" placeholder="Select country">
+                        </div>
+
+                        <div class="trans">
+                            <p>Delivery type</p>
+                            <input class="but" type="text" placeholder="Choose delivery type">
+                        </div>
+
+                        <div class="trans">
+                            <p>Payement methode</p>
+                            <input class="but" type="text" placeholder="Choose payement methode">
+                        </div>
+                        
+                    </div>
+                    <button class="Transaction"> Transaction</button>
+                </div>
+                <div><img src="./Group 1000004591.png" alt=""></div>
+            </div>
+    
+        </div> 
+    </div>
      <!-- Font Awesome for Icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Interactivity for sidebar menu
-            const menuItems = document.querySelectorAll('.menu-item');
-            menuItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    menuItems.forEach(i => i.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-
-        });
-    </script>       
-    
+     <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             // Interactivity for sidebar menu
+             const menuItems = document.querySelectorAll('.menu-item');
+             menuItems.forEach(item => {
+                 item.addEventListener('click', function() {
+                     menuItems.forEach(i => i.classList.remove('active'));
+                     this.classList.add('active');
+                 });
+             });
+ 
+         });
+     </script> 
 </body>
 </html>
